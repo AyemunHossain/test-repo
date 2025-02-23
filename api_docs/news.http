@@ -1,0 +1,29 @@
+#Get All Classes
+POST {{base_url}}/news/get-all?q=a
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JhYjgzYzAyYjNmMTM4MDA0MDI0MGUiLCJ1c2VybmFtZSI6ImpvaG5kb2UxMjMiLCJpYXQiOjE3NDAyOTM3NzgsImV4cCI6MTc0MDI5NzM3OH0.XbFZV1hOTbltewu1Aa2y9q7eoKakmGJdkod2s1N5Bqc
+
+{  "filter":{
+    "category": "67ba180e2903c9b41b33cfed",
+    "source": "67ba180e2903c9b41b33cfc5",
+    "publishedAt": "1999-12-05"
+  },
+  "pagination": {
+    "currentPage": 0,
+    "pageSize": 10
+  },
+  "sort": {
+    "publishedAt": -1
+  },
+  "select": {
+    "title":1,
+    "description":1,
+    "url":1,
+    "thumbnail":1,
+    "publishedAt":1,
+    "source":1,
+    "category": 1,
+    "content": 1,
+    "author": 1
+  }
+}

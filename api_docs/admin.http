@@ -1,0 +1,16 @@
+#Get All Classes
+POST {{base_url}}/admin/signup
+Content-Type: application/json
+
+{
+"readOnly": true,
+"email": "superadmin@gmail.com",
+"username": "superadmin",
+"password": "admin123456",
+"name": "Ayemun Hossain",
+"phoneNo": "01790274672",
+"profileImg": null,
+"role": "super_admin",
+"hasAccess": true,
+"permissions": ["create", "edit", "delete", "get"]
+}

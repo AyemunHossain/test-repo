@@ -1,0 +1,18 @@
+export default () => ({
+  productionBuild: process.env.PRODUCTION_BUILD === 'true',
+  hostname: `http://localhost:${process.env.PORT || 3000}`,
+  port: parseInt(process.env.PORT, 10) || 3000,
+  mongoCluster: `mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}?authSource=admin`,
+  userJwtSecret: process.env.JWT_PRIVATE_KEY_USER,
+  adminJwtSecret: process.env.JWT_PRIVATE_KEY_ADMIN,
+  userTokenExpiredTime: 3600,
+  adminTokenExpiredTime: 43200,
+  promoOfferSchedule: 'Promo_Offer_Schedule',
+  promoOfferScheduleOnStart: 'Promo_Offer_Schedule_On_Start',
+  promoOfferScheduleOnEnd: 'Promo_Offer_Schedule_On_End',
+  NY_TIMES_KEY: process.env.NY_TIMES_KEY,
+  NY_TIMES_URL: process.env.NY_TIMES_URL,
+  NY_TIMES_IMAGE_BASE_URL: process.env.NY_TIMES_IMAGE_BASE_URL,
+  NEWS_API_KEY: process.env.NEWS_API_KEY,
+  NEWS_API_URL: process.env.NEWS_API_URL,
+});

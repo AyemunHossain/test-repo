@@ -1,0 +1,13 @@
+{
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "rest-client.environmentVariables": {
+    "local_http": {
+      "version": "v2",
+      "base_url": "http://localhost:3000/api",
+      "app_version_andirod": "1.0.0"
+    },
+  },
+  
+  "git.ignoreLimitWarning": true
+}
